@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ControlledForm from './ControlledForm';
 
 class TestArea extends Component {
   render() {
@@ -7,6 +8,8 @@ class TestArea extends Component {
           <section className='textToMatch'>
               <p>Sentence to test</p>
           </section>
+          <ControlledForm />
+
       </div>
 
     )
