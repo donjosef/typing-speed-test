@@ -55,6 +55,24 @@ textarea:placeholder {
   font-weight: 300;
 }
 
+button {
+    padding: 20px;
+    color: #537EBB;
+    background: white;
+    border-radius: 2px;
+    border: 3px solid #537EBB;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: white;
+    background: #537EBB;
+}
+
 .timerContainer  {
     font-size: 3em;
     color: #77777B;

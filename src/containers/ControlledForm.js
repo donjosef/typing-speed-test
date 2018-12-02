@@ -12,6 +12,12 @@ handleTextChange = (e) => {
     });
 }
 
+resetTextArea = () => {
+    this.setState({
+       value: ''
+    });
+}
+
     render() {
        return(
         <div className='textAreaContainer'>
@@ -20,6 +26,7 @@ handleTextChange = (e) => {
                 onChange={this.handleTextChange}
                 placeholder='The clock start when you start typing.'
            ></textarea>
+           <button onClick={this.resetTextArea}>Start Over</button>
         </div>
     );
 
