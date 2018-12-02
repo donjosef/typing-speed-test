@@ -91,3 +91,13 @@ button:hover {
     font-size: 3em;
     color: #77777B;
 }
+
+@media screen and (max-width: 767px) {
+  .mainContent {
+    width: 95%;
+  }
+
+  .textToMatch {
+    padding: 20px 10px;
+  }
+}
