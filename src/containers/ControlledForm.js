@@ -19,12 +19,15 @@ resetTextArea = () => {
 }
 
     render() {
+      const {start} = this.props;
+
        return(
         <div className='textAreaContainer'>
             <textarea
                 value={this.state.value}
                 onChange={this.handleTextChange}
                 placeholder='The clock start when you start typing.'
+                onKeyPress={start}
            ></textarea>
            <button onClick={this.resetTextArea}>Start Over</button>
         </div>
