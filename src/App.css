@@ -18,3 +18,16 @@
   font-size: 1.6rem;
   text-shadow: 0 0 5px rgba(157, 213, 244, 0.5);
 }
+
+.mainContent {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.textToMatch {
+    background-color: #537EBB;
+    font-size: 1.2em;
+    color: #f8f8f8;
+    padding: 20px 50px;
+    font-size: 1.6rem;
+}
