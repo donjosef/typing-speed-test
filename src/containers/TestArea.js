@@ -95,7 +95,10 @@ handleReset = () => {
           <section className='textToMatch'>
               <p>{this.state.originText}</p>
           </section>
-          <CharCounter />
+          <CharCounter
+            completed={this.state.completed}
+            charCount={this.state.charCount}
+            timer={this.state.timer}/>
           <ControlledForm
              start={this.startTimer}
              checkMatch={this.checkMatch}
