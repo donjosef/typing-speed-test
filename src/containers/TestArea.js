@@ -85,7 +85,8 @@ handleReset = () => {
         timer,
         completed: false,
         partialMatch: false,
-        error: false
+        error: false,
+        charCount: 0
     });
 }
 
