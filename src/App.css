@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
+*{
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
   font-family: 'Roboto', sans-serif;
@@ -30,4 +33,24 @@
     color: #f8f8f8;
     padding: 20px 50px;
     font-size: 1.6rem;
+}
+
+.textAreaContainer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+.textAreaContainer textarea {
+    width: 100%;
+    border: 10px solid grey;
+    border-radius: 5px;
+    height: 200px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-family: sans-serif;
+    letter-spacing: 0.7px;
+}
+
+textarea:placeholder {
+  font-weight: 300;
 }
