@@ -5,7 +5,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-
+        <header>
+           <h1>Test Your Typing Speed</h1>
+        </header>
       </div>
     );
   }

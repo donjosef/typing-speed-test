@@ -1,3 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
 .App {
   text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App header {
+  color: #9BD3F2;
+  background-color: #5B6098;
+  padding: 20px 0;
+}
+
+.App header h1 {
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.6rem;
+  text-shadow: 0 0 5px rgba(157, 213, 244, 0.5);
 }
