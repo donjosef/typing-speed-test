@@ -35,6 +35,17 @@
     font-size: 1.6rem;
 }
 
+.charCounter {
+  font-size: 3.2em;
+  color: #77777B;
+}
+
+.charCounter p {
+  margin: 0;
+  font-size: 30%;
+  text-transform: uppercase;
+}
+
 .textAreaContainer {
     margin-top: 20px;
     margin-bottom: 20px;

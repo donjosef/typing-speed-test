@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CharCounter from '../components/CharCounter';
 import ControlledForm from './ControlledForm';
 import Timer from '../components/Timer';
 
@@ -9,6 +10,7 @@ class TestArea extends Component {
    timer: [0,0,0,0],
    partialMatch: false,
    completed: false,
+   charCount: 0,
    error: false,
    originText: 'Seventy seven benevolent elephants.'
  }
@@ -66,18 +68,42 @@ checkMatch = (e) => {
     }
 }
 
+charCountHandler = () => {
+  if(this.state.partialMatch || this.state.completed) {
+    this.setState(prevState => ({
+      charCount: prevState.charCount + 1
+    }));
+  }
+}
+
+handleReset = () => {
+    clearInterval(this.ID);
+    let timer = this.state.timer.slice();
+    timer = [0,0,0,0];
+    this.setState({
+        timerRunning: false,
+        timer,
+        completed: false,
+        partialMatch: false,
+        error: false
+    });
+}
+
   render() {
     return (
       <div className='mainContent'>
           <section className='textToMatch'>
               <p>{this.state.originText}</p>
           </section>
+          <CharCounter />
           <ControlledForm
              start={this.startTimer}
              checkMatch={this.checkMatch}
              completed={this.state.completed}
              partialMatch={this.state.partialMatch}
-             error={this.state.error}/>
+             error={this.state.error}
+             reset={this.handleReset}
+             onCharCount={this.charCountHandler}/>
           <Timer timer={this.state.timer}/>
       </div>
 

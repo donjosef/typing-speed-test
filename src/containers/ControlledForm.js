@@ -19,7 +19,7 @@ resetTextArea = () => {
 }
 
     render() {
-      const {start, checkMatch, completed, partialMatch, error} = this.props;
+      const {start, checkMatch, completed, partialMatch, error, reset, onCharCount} = this.props;
       const style = completed ? {border: '10px solid #34A853'} : partialMatch ? {border: '10px solid #4584EF'} : error ? {border: '10px solid #EA4335'} : null;
 
        return(
@@ -30,9 +30,15 @@ resetTextArea = () => {
                 onChange={this.handleTextChange}
                 placeholder='The clock start when you start typing.'
                 onKeyPress={start}
-                onKeyUp={checkMatch}
+                onKeyUp={(e) => {
+                  checkMatch(e);
+                  onCharCount();
+                }}
            ></textarea>
-           <button onClick={this.resetTextArea}>Start Over</button>
+           <button onClick={() => {
+              this.resetTextArea();
+              reset();
+            }}>Start Over</button>
         </div>
     );
 
