@@ -42,12 +42,14 @@
 }
 .textAreaContainer textarea {
     width: 100%;
+    padding: 0 10px;
     border: 10px solid grey;
     border-radius: 5px;
     height: 200px;
-    font-size: 1.3em;
+    font-size: 1.5em;
+    color: #303030;
     line-height: 1.5em;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.7px;
 }
 
@@ -56,6 +58,7 @@ textarea:placeholder {
 }
 
 button {
+  font-family: 'Roboto', sans-serif;
     padding: 20px;
     color: #537EBB;
     background: white;
