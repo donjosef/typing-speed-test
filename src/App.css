@@ -54,3 +54,8 @@
 textarea:placeholder {
   font-weight: 300;
 }
+
+.timerContainer  {
+    font-size: 3em;
+    color: #77777B;
+}

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ControlledForm from './ControlledForm';
+import Timer from '../components/Timer';
 
 class TestArea extends Component {
   render() {
@@ -9,7 +10,7 @@ class TestArea extends Component {
               <p>Sentence to test</p>
           </section>
           <ControlledForm />
-
+          <Timer />
       </div>
 
     )
